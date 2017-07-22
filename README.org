@@ -1,0 +1,10 @@
+* Git on Alpine Linux
+  This Dockerfile provides a full installation of Git on Alpine, intended for
+  running on CI.
+* Usage
+  To boot straight to a prompt in the image:
+
+  #+BEGIN_SRC shell
+    $ docker run --rm -it muhifauzan/alpine-git
+    /opt/app # 
+  #+END_SRC
