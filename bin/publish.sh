@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 REPO=muhifauzan/alpine-git
 REFRESHED_AT=$(cat REFRESHED_AT)

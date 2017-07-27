@@ -10,10 +10,14 @@ ENV REFRESHED_AT=$REFRESHED_AT \
     LANG=en_US.UTF-8 \
     HOME=/opt/app
 
-RUN mkdir -p $HOME && \
+RUN echo "//////////////////// Creating home directory /////" && \
+    mkdir -p $HOME && \
+    echo "//////////////////////// Adding default user /////" && \
     adduser -s /bin/sh -u 1001 -G root -h $HOME -S -D default && \
+    echo "///////// Setting home owner to default user /////" && \
     chown -R 1001:0 $HOME && \
     apk --update upgrade --no-cache && \
+    echo "/////////////// Installing Git and Git deps  /////" && \
     apk add --no-cache git \
       openssh
 
