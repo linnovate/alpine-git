@@ -1,4 +1,7 @@
 * Git on Alpine Linux
+  [[https://hub.docker.com/r/muhifauzan/alpine-git/][file:https://img.shields.io/docker/automated/muhifauzan/alpine-git.svg]] 
+  [[https://hub.docker.com/r/muhifauzan/alpine-git/][file:https://img.shields.io/docker/build/muhifauzan/alpine-git.svg]] 
+
   This Dockerfile provides a full installation of Git on Alpine, intended for
   running on CI.
 * Usage

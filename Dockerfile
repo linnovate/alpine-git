@@ -1,12 +1,10 @@
 FROM alpine:3.6
 
-ARG REFRESHED_AT
-
 # Important!  Update this no-op ENV variable when this Dockerfile
 # is updated with the current date. It will force refresh of all
 # of the base images and things like `apt-get update` won't be using
 # old cached versions when the Dockerfile is built.
-ENV REFRESHED_AT=$REFRESHED_AT \
+ENV REFRESHED_AT=2017-07-31 \
     LANG=en_US.UTF-8 \
     HOME=/opt/app
 
