@@ -10,7 +10,7 @@ running on CI.
 
 To boot straight to a prompt in the image:
 
-``` shell
+```shell
 $ docker run --rm -it muhifauzan/alpine-git
 /opt/app # 
 ```
